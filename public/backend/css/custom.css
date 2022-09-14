@@ -1,0 +1,10 @@
+.nav li a i:first-child{
+    margin: 0px 20px 0px 0px !important;
+}
+.catagory-model{
+    max-width: 800px !important;
+    background: white;
+}
+.modal-content{
+    background: white !important;
+}
