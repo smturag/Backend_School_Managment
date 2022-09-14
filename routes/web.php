@@ -21,4 +21,8 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
+Route::prefix('admin')->name('admin.')->group(function(){
+    Route::view('/','backend.index');
+});
+
 require __DIR__.'/auth.php';
