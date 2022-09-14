@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+<<<<<<< HEAD
 
 
 
@@ -26,6 +27,11 @@ Route::middleware(['auth'])->group(function () {
     
 
 
+=======
+
+Route::middleware(['auth'])->group(function () {
+    Route::view('/dashboard', 'backend.index')->name('dashboard');
+>>>>>>> 18ccbe3b554ca0cae83a32a0193c7a3763dbdfec
 });
 
 require __DIR__.'/auth.php';
